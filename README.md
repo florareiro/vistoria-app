@@ -10,7 +10,7 @@ npm i
 node server.js
 
 ## frontend
-
+usar a branch frontend
 cd vistoria-app/front-end
 
 ### instalar dependencias
