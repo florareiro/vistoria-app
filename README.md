@@ -1,6 +1,7 @@
 # vistoria app
 
 ## backend
+usar branch main
 cd  vistoria-app/backend
 
 ### instalar dependencias
