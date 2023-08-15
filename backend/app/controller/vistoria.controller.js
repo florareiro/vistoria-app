@@ -1,5 +1,5 @@
 const db = require("../models/index");
-const Tutorial = db.tutorials;
+const Vistoria = db.vistorias;
 const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
@@ -13,7 +13,7 @@ exports.create = (req, res) => {
 
   console.log(req.body);
   // Create a Tutorial
-  const tutorial = {
+  const vistoria = {
     nome: req.body.condutor.nome,
     cpf: req.body.condutor.cpf,
     rg: req.body.condutor.rg,
@@ -37,7 +37,7 @@ exports.create = (req, res) => {
   };
 
   // Save Tutorial in the database
-  Tutorial.create(tutorial)
+  Vistoria.create(vistoria)
     .then((data) => {
       res.send(data);
     })
@@ -51,7 +51,7 @@ exports.create = (req, res) => {
 
 // Retrieve all Tutorials from the database.
 exports.findAll = (req, res) => {
-  Tutorial.findAll()
+  Vistoria.findAll()
     .then((data) => {
       res.send(data);
     })

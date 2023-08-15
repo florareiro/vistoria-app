@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Api Vistoria Go" });
 });
 
-require("./app/routes/tutorial.routes")(app);
+require("./app/routes/vistoria.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
